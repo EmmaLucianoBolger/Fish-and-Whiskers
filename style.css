@@ -1,0 +1,148 @@
+body {
+    font-family: Arial;
+    background-color: #fff8f0;
+    margin: 0;
+}
+
+header {
+    background-color: #aee6ff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: #ffd6e7;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+}
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #aee6ff, #fff8f0);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.product {
+    background: #ffd6e7;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #5c7cfa;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b5bdb;
+}
+body::after {
+    content: "🐟 🐱 🐟 🐱";
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.2;
+    font-size: 30px;
+}
+
+.cart-container {
+    text-align: center;
+    padding: 20px; 
+}
+
+.cart-item {
+    background: #ffd6e7;
+    margin: 10px auto;
+    padding : 10px;
+    border-radius: 15px;
+    width: 250px;
+}
+.remove-btn {
+    background-color: #ff6b6b;
+    margin-top: 10px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form {
+    background: #ffd6e7;
+    padding: 25px;
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #5c7cfa;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.page {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffd6e7;
+    padding: 20px;
+    border-radius: 20px;
+    width: 260px;
+    margin: 15px auto;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+}
+
+button {
+    margin-top: 10px;
+}
