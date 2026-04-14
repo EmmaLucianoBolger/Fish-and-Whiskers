@@ -188,7 +188,7 @@ button {
     top: -50px;
     width: 5px;
     height: 40px;
-    background: red;
+    background: rgb(172, 169, 169);
     z-index: 9999;
     pointer-events: none;
 
