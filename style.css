@@ -185,17 +185,21 @@ button {
 
 .raindrop {
     position: fixed;
-    top: -30px;
-    width: 4px;
-    height: 25px;
-    background: red; 
+    top: -50px;
+    width: 5px;
+    height: 40px;
+    background: red;
     z-index: 9999;
     pointer-events: none;
+
     animation: fall linear;
 }
 
 @keyframes fall {
-    to {
-        transform: translateY(100vh);
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(110vh);
     }
 }

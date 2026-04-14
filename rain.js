@@ -3,16 +3,16 @@ function createRain() {
     drop.classList.add("raindrop");
 
     drop.style.left = Math.random() * window.innerWidth + "px";
-
-    drop.style.animationDuration = (Math.random() * 1 + 0.5) + "s";
+    drop.style.animationDuration = (Math.random() * 1 + 1) + "s";
+    drop.style.opacity = Math.random();
 
     document.body.appendChild(drop);
 
     setTimeout(() => {
         drop.remove();
-    }, 2000);
+    }, 3000);
 }
 
 window.addEventListener("load", () => {
-    setInterval(createRain, 50);
+    setInterval(createRain, 150);
 });
