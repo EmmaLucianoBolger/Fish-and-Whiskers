@@ -1,16 +1,18 @@
 function createRain() {
-    const rainDrop = document.createElement("div");
-    rainDrop.classList.add("raindrop");
+    const drop = document.createElement("div");
+    drop.classList.add("raindrop");
 
-    rainDrop.style.left = Math.random() * window.innerWidth +"px";
+    drop.style.left = Math.random() * window.innerWidth + "px";
 
-    rainDrop.style.animationDuration =(Math.random() * 1 + 0.5) + "s";
+    drop.style.animationDuration = (Math.random() * 1 + 0.5) + "s";
 
-    document.body.appendChild(rainDrop);
+    document.body.appendChild(drop);
 
     setTimeout(() => {
-        rainDrop.remove();
+        drop.remove();
     }, 2000);
 }
 
-setInterval(createRain, 100);
+window.addEventListener("load", () => {
+    setInterval(createRain, 50);
+});
