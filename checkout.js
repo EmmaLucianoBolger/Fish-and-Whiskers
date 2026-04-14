@@ -3,7 +3,7 @@ function placeOrder() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     if (!name || cart.length === 0) {
-        alert("Missing info 😿");
+        alert("Missing info ");
         return;
     }
 

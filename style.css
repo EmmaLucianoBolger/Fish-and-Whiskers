@@ -16,20 +16,6 @@ nav a {
     color: black;
 }
 
-.products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.product {
-    background: #ffd6e7;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    width: 200px;
-}
 body {
     font-family: 'Comic Sans MS', cursive;
     background: linear-gradient(to bottom, #aee6ff, #fff8f0);
@@ -39,19 +25,7 @@ h1 {
     font-size: 2.5em;
 }
 
-.product {
-    background: #ffd6e7;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.product:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-}
 
 button {
     background-color: #5c7cfa;
@@ -145,4 +119,83 @@ input, select {
 
 button {
     margin-top: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: #ffd6e7;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #5c7cfa;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product:hover {
+    background-color: #3b5bdb;
+}
+
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.raindrop {
+    position: fixed;
+    top: -20px;
+    width: 2px;
+    height: 15px;
+    background: #1a1d1f;
+    opacity: 1;
+    border-radius: 50%;
+    animation: full linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
 }

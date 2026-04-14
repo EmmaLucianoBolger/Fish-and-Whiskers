@@ -7,7 +7,7 @@ function addProduct() {
     let price = document.getElementById("price").value;
 
     if (!name || !price) {
-        alert("Fill all fields 😾");
+        alert("Fill all fields ");
         return;
     }
 
@@ -26,7 +26,7 @@ if (document.getElementById("product-list")) {
             <div class="card">
                 <h3>${p.name}</h3>
                 <p>€${p.price}</p>
-                <button onclick="deleteProduct(${i})">Delete ❌</button>
+                <button onclick="deleteProduct(${i})">Delete </button>
             </div>
         `;
     });
