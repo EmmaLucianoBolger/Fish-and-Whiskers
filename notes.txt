@@ -3,6 +3,13 @@ things to do:
 - organise directory 
 
 
+- for order confirmation page add a confetti animation
+
+
+-- for coffee stand change theme to cats and fish
+
+- add rain toggle to all pages with rain
+
 
 
 
@@ -11,3 +18,26 @@ things to do:
 
 database set up 
 - cry over this in the future 
+
+---------------------------
+COFFEE NEEDS SEPERATE database
+----------------------------
+
+tables: base     milk          sweetner      syrp   //maybe add this depending on time 
+rows:   3         3               3
+
+
+
+
+base 
+expresso
+filter coffee 
+americano
+
+
+
+
+security 
+ session.use_strict_mode true - doesn't accept uninitialised session id's //must add this for marks
+
+ ignore php session cookie and code this sql instead --- will mess with js 
