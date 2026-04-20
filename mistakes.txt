@@ -1,0 +1,11 @@
+passwords are hashed with bcrypt with cost factor of 10 - it should be 12 
+
+emails should be encrypted
+
+buggy insert form -null products
+
+no foreign key restraints - means could have cart entries pointing to users or products that don't exsist
+
+not too important as this site won't be updated, but, if a product name changes, old orders won't reflect reality
+
+so many problems with the nav bar
