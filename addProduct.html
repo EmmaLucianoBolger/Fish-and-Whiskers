@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Product </title>
+    <title>Add Product</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,21 +11,26 @@
 <header>
     <h1>Add Product</h1>
     <nav>
-            <a href="index.html">Home</a>
-            <a href="cart.html">Cart</a>
-            <a href="login.html">Login</a>
-        </nav>
+        <a href="index.php">Home</a>
+        <a href="sellerdashboard.html">Dashboard</a>
+        <a href="viewOrders.php">View Orders</a>
+        <a href="viewProducts.php">View Products</a>
+    </nav>
 </header>
 
 <section class="page">
     <div class="card">
-        <input type="text" id="name" placeholder="Product Name 🐾">
-        <input type="number" id="price" placeholder="Price €">
 
-        <button onclick="addProduct()">Add Product </button>
+        <form action="addProduct.php" method="POST">
+            <input type="text" name="name" placeholder="Product Name " required>
+            <input type="number" name="price" placeholder="Price €" required>
+
+            <button type="submit">Add Product</button>
+        </form>
+
     </div>
 </section>
 
-<script src="seller.js"></script>
+<script src="js/rain.js"></script>
 </body>
 </html>
